@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Hello World
       run: |
         echo "Hello, world!"
@@ -20,7 +20,7 @@ jobs:
       run: pwd
       
     - name: Set execute permission on script.sh
-      run: chmod +x script1.sh
+      run: chmod +x script.sh
 
     - name: Run script.sh
-      run: script1.sh
+      run: script.sh
