@@ -23,5 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: list-contents
     steps:
+    - name: Check script.sh existence
+      run: ls -al .github/workflows/script.sh
+
+    - name: Grant execute permission to script.sh
+      run: chmod +x .github/workflows/script.sh
+
     - name: Run script.sh
-      run: bash .github/workflows/script.sh
+      run: ./.github/workflows/script.sh
