@@ -26,4 +26,4 @@ jobs:
       run: chmod +x script.sh
 
     - name: Run script.sh
-      run: ./script.sh
+      run: script.sh
